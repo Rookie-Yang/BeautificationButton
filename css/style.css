@@ -7,6 +7,9 @@
   box-sizing:border-box;
 }
 
+body{
+}
+
 .RookieButton{
   border:none;
   background:none;
@@ -17,7 +20,11 @@
   height:36px;
   line-height:36px;
   padding:0 16px;
+  font-size:14px;
   transition:all 0.5s;
+  border-radius:3px;
+  background:green;
+  z-index:0;
 }
 
 .RookieButton:hover{
@@ -27,4 +34,25 @@
 .RookieButton:focus{
   outline:none;
   background:#E5E5E5;
+}
+
+.RookieButton > .circle{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:10px;
+  height:10px;
+  background:red;
+  margin-left:-5px;
+  margin-top:-5px;
+  border-radius:50%;
+  transition:transform 0.5s;
+  visibility:hidden;
+  pointer-events:none;
+  z-index:-1;
+}
+
+.RookieButton > .circle.active{
+  transform:scale(10);
+  visibility:visible;
 }
