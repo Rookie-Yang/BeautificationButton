@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+.RookieButton{
+  border:none;
+  background:none;
+  text-decoration:none;
+  display:inline-block;
+  overflow:hidden;
+  position:relative;
+  height:36px;
+  line-height:36px;
+  padding:0 16px;
+  transition:all 0.5s;
+}
+
+.RookieButton:hover{
+  background:#E5E5E5;
+}
+
+.RookieButton:focus{
+  outline:none;
+  background:#E5E5E5;
+}
